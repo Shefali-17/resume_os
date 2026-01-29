@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://shefali-17.github.io/resume_os",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
