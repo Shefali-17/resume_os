@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    "title": "Scheds – A Course Schedule Generator",
+    "description": "My proudest project yet, a comprehensive course schedule generator with authentication and role-based access.",
+    "tags": ["ASP.NET Core", "C#", "Entity Framework", "SQL Server", "Bootstrap"],
+    "repoLink": "https://github.com/microsoft/dotnet",
+    "demoLink": "https://dotnet.microsoft.com/"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
+    "title": "TaskFlow – Productivity Web App",
+    "description": "A task management web app to organize daily work with drag-and-drop and real-time updates.",
+    "tags": ["React", "JavaScript", "SCSS", "Firebase"],
+    "repoLink": "https://github.com/facebook/react",
+    "demoLink": "https://react.dev/"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "title": "ShopEase – E-Commerce Platform",
+    "description": "A full-stack e-commerce platform with cart, checkout, and payment gateway integration.",
+    "tags": ["Node.js", "Express", "MongoDB", "Stripe"],
+    "repoLink": "https://github.com/nodejs/node",
+    "demoLink": "https://nodejs.org/"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
+    "title": "WeatherNow – Live Weather App",
+    "description": "Real-time weather forecasting app using public APIs with location-based search.",
+    "tags": ["React", "API", "OpenWeather", "CSS"],
+    "repoLink": "https://github.com/axios/axios",
+    "demoLink": "https://openweathermap.org/"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "title": "DevNotes – Markdown Note App",
+    "description": "A markdown-based note-taking app designed for developers with cloud sync.",
+    "tags": ["Next.js", "Markdown", "LocalStorage"],
+    "repoLink": "https://github.com/vercel/next.js",
+    "demoLink": "https://nextjs.org/"
+  }
+]

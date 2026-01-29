@@ -1,0 +1,199 @@
+/**
+ * =========================================
+ *  SHEFALI YADAV — FULL STACK DEVELOPER
+ * =========================================
+ */
+
+type Level = "Beginner" | "Intermediate" | "Advanced" | "Expert";
+
+interface Skill {
+  technology: string;
+  level: Level;
+  proficiency: number; // %
+}
+
+interface Experience {
+  company: string;
+  designation: string;
+  duration: string;
+  responsibilities: string[];
+}
+
+interface Project {
+  name: string;
+  description: string;
+  role: string;
+  technologies: string[];
+  outcome: string;
+}
+
+interface Education {
+  qualification: string;
+  institute: string;
+  year: string;
+}
+
+class FullStackDeveloperResume {
+  // -----------------------------------------
+  // BASIC DETAILS
+  // -----------------------------------------
+
+  name: string = "Shefali Yadav";
+  title: string = "Full Stack Developer";
+  location: string = "Ghaziabad, Uttar Pradesh, India";
+  email: string = "shefaliyadav1709@gmail.com";
+  phone: string = "9234567890";
+
+  github: string = "https://github.com/shefaliyadav1709";
+  linkedin: string = "https://linkedin.com/in/shefali-yadav";
+
+  // -----------------------------------------
+  // TECHNICAL SKILLS
+  // -----------------------------------------
+
+  frontendSkills: Skill[] = [
+    { technology: "React.js", level: "Expert", proficiency: 95 },
+    { technology: "Next.js", level: "Advanced", proficiency: 90 },
+    { technology: "TypeScript", level: "Advanced", proficiency: 92 },
+    { technology: "JavaScript (ES6+)", level: "Expert", proficiency: 96 },
+    { technology: "Tailwind CSS", level: "Advanced", proficiency: 90 },
+    { technology: "HTML5 & CSS3", level: "Expert", proficiency: 95 }
+  ];
+
+  backendSkills: Skill[] = [
+    { technology: "Node.js", level: "Advanced", proficiency: 90 },
+    { technology: "Express.js", level: "Advanced", proficiency: 88 },
+    { technology: "REST APIs", level: "Advanced", proficiency: 92 },
+    { technology: "MongoDB", level: "Advanced", proficiency: 85 },
+    { technology: "PostgreSQL", level: "Intermediate", proficiency: 80 },
+    { technology: "Redis", level: "Intermediate", proficiency: 75 }
+  ];
+
+  toolsAndPlatforms: string[] = [
+    "Git & GitHub",
+    "Docker",
+    "AWS (EC2, S3, IAM)",
+    "Firebase",
+    "Linux",
+    "Postman",
+    "Figma"
+  ];
+
+  // -----------------------------------------
+  // PROFESSIONAL EXPERIENCE
+  // -----------------------------------------
+
+  experience: Experience[] = [
+    {
+      company: "TechFlow Systems",
+      designation: "Full Stack Developer",
+      duration: "August 2023 – Present",
+      responsibilities: [
+        "Developed scalable full-stack applications using React, Node.js, and MongoDB",
+        "Built reusable and responsive UI components using Tailwind CSS",
+        "Designed and implemented RESTful APIs for multiple modules",
+        "Integrated authentication and authorization using JWT and Firebase",
+        "Improved application performance and reduced API response time",
+        "Deployed and managed applications using Docker and AWS"
+      ]
+    },
+    {
+      company: "CodeWave Solutions",
+      designation: "Web Developer Intern",
+      duration: "January 2023 – July 2023",
+      responsibilities: [
+        "Converted Figma designs into responsive React interfaces",
+        "Collaborated with backend team to integrate APIs",
+        "Fixed UI bugs and improved overall user experience",
+        "Optimized frontend performance for mobile devices"
+      ]
+    }
+  ];
+
+  // -----------------------------------------
+  // PROJECTS
+  // -----------------------------------------
+
+  projects: Project[] = [
+    {
+      name: "BusSaathi – Real-Time Transport Tracking",
+      role: "Full Stack Developer",
+      description:
+        "A social-impact web platform for real-time bus tracking in small and medium cities.",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Firebase",
+        "Google Maps API",
+        "Tailwind CSS"
+      ],
+      outcome:
+        "Helped daily commuters track buses accurately and reduce waiting time"
+    },
+    {
+      name: "Visara – Smart Vision Stick Platform",
+      role: "Frontend & Backend Developer",
+      description:
+        "A platform supporting B2B and D2C sales for a smart vision stick for visually impaired users.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "AWS",
+        "MongoDB"
+      ],
+      outcome:
+        "Built an accessibility-first website with scalable backend architecture"
+    },
+    {
+      name: "TaskFlow – Team Management System",
+      role: "Frontend Developer",
+      description:
+        "A task and productivity management web application for teams.",
+      technologies: [
+        "React.js",
+        "Redux",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      outcome:
+        "Improved team productivity through real-time task updates and dashboards"
+    }
+  ];
+
+  // -----------------------------------------
+  // EDUCATION
+  // -----------------------------------------
+
+  education: Education[] = [
+    {
+      qualification: "Bachelor of Technology (B.Tech)",
+      institute: "KIET Group of Institutions",
+      year: "2021 – 2025"
+    }
+  ];
+
+  // -----------------------------------------
+  // SOFT SKILLS & INTERESTS
+  // -----------------------------------------
+
+  softSkills: string[] = [
+    "Problem Solving",
+    "Clean Code Practices",
+    "Team Collaboration",
+    "Time Management",
+    "Effective Communication"
+  ];
+
+  interests: string[] = [
+    "Building full-stack projects",
+    "Hackathons and social-impact tech",
+    "UI/UX design",
+    "Open-source contribution",
+    "Teaching and mentoring"
+  ];
+}
+
+
+const shefaliYadavResume = new FullStackDeveloperResume();
+export default shefaliYadavResume;
